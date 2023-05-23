@@ -1,0 +1,52 @@
+@use "./partials/variables" as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "~bootstrap/scss/bootstrap";
+
+/* BODY */
+
+body {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* HEADER */
+
+header {
+    border: 1px solid grey;
+    background-color: white;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding-bottom: 67px;
+        }
+    }
+
+    img {
+        width: 20%;
+    }
+
+    .container {
+        padding: 40px 0 37px 0;
+    }
+}
+
+#allmovie , #topmovie {
+    ul {
+        list-style: none;
+        img {
+            width: 250px;
+            height: 350px;
+        }
+    }
+}
