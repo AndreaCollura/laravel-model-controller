@@ -6,12 +6,12 @@
             <ul class="d-flex flex-wrap gap-3">
                 @foreach ($topmovies as $topmovie)
                     <li>
-                        <a href="">
+                        <a href="{{ route('movies.show', ['id' => $topmovie->id])}}">
                             <img src="{{ $topmovie->image }}" alt="">
                         </a>
-                        <div>
-                            <p>{{ $topmovie->title }}</p>
-                            <p>Rating: {{$topmovie->vote}}</p>
+                        <div class="text-box">
+                            <p >{{ $topmovie->title }}</p>
+                            <p >Rating: {{$topmovie->vote}}</p>
                         </div>
 
                     </li>

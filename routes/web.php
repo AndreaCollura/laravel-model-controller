@@ -20,7 +20,6 @@ Route::view('/', 'home')->name('home');
 
 Route::get('/', [MovieController::class, 'trending'])->name('home');
 Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
 
-
-/* Route::get('/movies', [MovieController::class, 'show'])->name('movies.show'); */
 

@@ -9,6 +9,12 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import "~bootstrap/scss/bootstrap";
 
+
+
+.debug{
+    border: 1px solid red;
+}
+
 /* BODY */
 
 body {
@@ -29,7 +35,13 @@ header {
             font-size: 0.8rem;
             font-weight: bold;
             padding-bottom: 67px;
+
+            &.active{
+                color: red;
+            }
         }
+
+
     }
 
     img {
@@ -45,8 +57,32 @@ header {
     ul {
         list-style: none;
         img {
-            width: 250px;
-            height: 350px;
+            width: 280px;
+            height: 380px;
         }
+        .text-box{
+
+            width: 270px;
+            p{
+            font-size: 1.2rem;
+            transform: uppercase;
+            font-weight: bold;
+            white-space: wrap;
+
+        }
+        }
+
+    }
+}
+
+
+#movie-info{
+    img{
+        width: 330px;
+        height: 430px;
+    }
+
+    span{
+        color: rgba(123, 25, 25, 0.848);
     }
 }

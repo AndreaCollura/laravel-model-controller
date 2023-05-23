@@ -6,9 +6,8 @@
             </div>
             <div>
                 <ul class="d-flex my-0 gap-4">
-                    <li><a href="{{ route('home')}}">Home</a></li>
-                    <li><a href="{{ route('movies.index')}}">All Movies</a></li>
-                    {{-- <li><a href="{{ route('movies.show')}}">All Movies</a></li> --}}
+                    <li><a class=" {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home')}}">Home</a></li>
+                    <li><a class=" {{ Route::currentRouteName() == 'movies.index' ? 'active' : '' }}" href="{{ route('movies.index')}}">All Movies</a></li>
                 </ul>
             </div>
         </div>
